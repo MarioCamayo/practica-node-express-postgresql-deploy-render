@@ -6,8 +6,8 @@ import {config} from 'dotenv'
 config()
 const app = express()
 const pool = new pg.Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: true
+  connectionString: process.env.DATABASE_URL
+  
 
 })
 
